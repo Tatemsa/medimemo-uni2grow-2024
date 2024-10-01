@@ -5,7 +5,6 @@ import Dashboard from "./pages/Dashboard";
 import Contacts from "./pages/contacts/Contacts";
 import Therapies  from "./pages/therapies/Therapies";
 import Medications from  "./pages/medications/Medications";
-
 import Login from "./pages/login/Login";
 import AppNavigation from "./components/AppNavigation"; 
 
