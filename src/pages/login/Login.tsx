@@ -63,7 +63,7 @@ function Login() {
     try {
       const validationErrors = validateForm(credentials);
       if (Object.keys(validationErrors).length === 0) {
-        const result = await fetch("http://localhost:3000/users");
+        const result = await fetch("http://localhost:80/users");
         const datas = await result.json();
 
         const isValidUser = datas.some(
@@ -73,7 +73,7 @@ function Login() {
         );
         if (isValidUser) {
           setCredentials({ username: "", password: "" });
-          navigate("/dashboard");
+          navigate("/medications");
         } else {
           setSnackbarMessage("Email or password incorrect");
           setOpenSnackbar(true);
